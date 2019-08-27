@@ -1,0 +1,222 @@
+/*public*/
+.wrapper{
+	height: 100%!important
+}
+.main-sidebar{
+	position: fixed;
+}
+.content-wrapper,.grid-1.box{
+	height: 100%;
+}
+.modal.fade{
+	text-align: center!important;
+}
+/*ảnh banner*/
+.box-img{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img-banner{
+	float: left;
+    width: 100px;
+    height: 50;
+    margin: 0 5px;
+}
+.box-header{
+	display: flex;
+}
+.box-header h3{
+	flex: auto;
+}
+/*admin header*/
+.interactAcc{
+	position: relative;
+}
+.interactAcc:hover .dropdowAcc{
+	opacity: 1;
+	visibility: visible;
+}
+.interactAcc ul.dropdowAcc{
+	opacity: 0;
+	position: absolute;
+	background-color: white;
+	border-radius: 5px;
+	overflow: hidden;
+	list-style: none;
+	padding: 0;
+	transition: 1s;
+	top: 54px;
+	box-shadow: 0px 0px 5px 0px #676060;
+	visibility: hidden;
+}
+.interactAcc ul.dropdowAcc li,.interactAcc ul.dropdowAcc li a{
+	padding: 8px;
+	font-size: 16px;
+	color: #807878;
+}
+.interactAcc ul.dropdowAcc li a{
+	padding: 0;
+}
+ul.dropdowAcc li:hover{
+	background-color: #3c8dbc;
+	color: white;
+	cursor: pointer;
+}
+ul.dropdowAcc li:hover a{
+	color: white;
+}
+/*info admin*/
+.avt{
+  position: relative;
+  margin: auto;
+  margin-bottom: 10px;
+
+}
+.modal .avt{
+	  width: 100px;
+  height: 100px;
+}
+.avt input{
+  display: none;
+}
+.avt label{
+  position: absolute;
+  right: -4px;
+  background-color: white;
+  padding: 4px 8px;
+  border-radius: 999px;
+}
+.avtAcc.topAcc{
+	width: 35px;
+    height: 35px;
+    float: left;
+    margin-top: -8px;
+    margin-right: 5px;
+}
+.avtAcc.leftAcc{
+	width: 50px;
+	height: 50px;
+}
+.avt div,.avtAcc{
+  background-position: center;
+  background-size: cover;
+  border-radius: 999px;
+  overflow: hidden;
+}
+.modal .avt div{
+	width: 100%;
+  height: 100%;
+}
+.box-infoAdmin{
+  width: 450px;
+  background-color: white;
+  margin: auto;
+  padding: 20px;
+}
+.btn-delete{
+	color: white !important;
+}
+/*product*/
+/*table*/
+#product-1 tbody tr td:nth-child(2),#product-2 tbody tr td:nth-child(2){
+	max-width: 150px;
+}
+#product-1 tbody tr td:nth-child(3),#product-2 tbody tr td:nth-child(3){
+	max-width: 100px;
+}
+#product-1 tbody tr td:nth-child(6),#product-2 tbody tr td:nth-child(6){
+	width: 300px;
+}
+#product-1 tbody tr td:nth-child(8),#product-2 tbody tr td:nth-child(8){
+	width: 100px;
+}
+.grid-1.box .form-body{
+	box-shadow: 0px 0px 8px -4px #000;
+	margin: 50px;
+    border: solid 1px gray;
+}
+.grid-1.box h3{
+	background-color: #f39c12;
+	padding: 10px;
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+.form-horizontal{
+	display: inline-block;
+}
+.row{
+	margin: 0px !important;
+}
+.form-group.row{
+	margin: 15px 5px !important;
+}
+/*thêm ảnh*/
+.plus-img,.showImage,.showListImage{
+    background-color: #10a145;
+    border-radius: 5px;
+    margin-left: 18px;
+    float: left;
+}
+.box-listImg{float: left}
+.showImage,.showListImage{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.showListImage{
+	width: 40px;
+	height: 40px;
+}
+.plus-img{
+	width: 40px;
+    height: 40px;
+}
+.plus-img p{
+	color: white;
+	font-size: 30px;
+	text-align: center;
+	margin: 0;
+}
+#listImage,#image{
+	display: none;
+}
+/*label*/
+label{
+	font-weight: 500 !important;
+    font-size: 16px !important;
+    padding: 0 !important;
+
+}
+/*img*/
+.box-imgPro{
+	width: 100%;
+	height: 100px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.table-bordered > tbody > tr > td{
+	vertical-align: middle;
+}
+/*modal*/
+.modal-dialog{
+	width: auto !important;
+    display: inline-block !important;
+}
+/*chi tiết order*/
+.infoReceiver{
+	margin: 10px;
+	border-radius: 5px;
+    border: solid 2px #236339;
+}
+.infoReceiver div{
+    margin: 10px 25px;
+}
+.infoReceiver h4{
+    margin: 0;
+    background-color: #236339;
+    color: white;
+    padding: 5px;
+}
+

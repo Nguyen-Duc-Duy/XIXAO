@@ -1,0 +1,89 @@
+/*product girl*/
+	/*thịnh hành*/
+.trendfirst .banner-girl div,.trendlast .banner-girl div{
+	height: 500px;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+.trendfirst, .trendlast{
+    background-color: white;
+    border-radius: 0 0 12px 12px;
+    overflow: hidden;
+    margin: 6px 0px;
+}
+.trendlast{
+	    border-radius: 12px;
+}
+.trend-accessory .flex-column{
+	background-color: #f3c99f;
+}
+.item-accssory{
+	height: 33.333333%;
+	display: flex;
+}
+.item-accssory .img-as{
+	width: 30%;
+    flex: 1;
+    line-height: 10;
+    padding: 0px 15px;
+}
+.item-accssory .info-as{
+	flex: 3;
+}
+.item-accssory .info-as p{
+
+ margin: 0;
+}
+.item-accssory .info-as p:first-child{
+	display: inline-block;
+    position: relative;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    background-size: 100% 23%;
+    background-position: center 20px;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(45deg, #ff5bc7,#ff5bc7);
+    transform: skew(-16deg);
+}
+/*product type item*/
+.item-product-more .img-item-small {
+    width: 100px !important;
+    height: 84px!important;
+}
+.box-info-stt{
+	flex: auto;
+    text-align: center;
+}
+.box-info-stt .info-item{
+	line-height: 1.2;
+}
+.item-product-more div.d-flex{
+	border-radius: 12px;
+    overflow: hidden;
+    height: 100%;
+    border: solid 1px #e3e3e3;
+
+}
+/*sale girl*/
+.sale-girl{
+	height: 300px;
+    background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url('../image/Product-girl/slide/slider-4.jpg');
+    background-position: center 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.sale-girl .content-sale h2{
+	padding: 30px 20px;
+	color: white;
+	font-weight: 700;
+}
+.sale-girl .content-sale p{
+	font-size: 20px;
+	color: white;
+}

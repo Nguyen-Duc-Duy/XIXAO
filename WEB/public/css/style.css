@@ -1,0 +1,493 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+
+.container-fluid{
+    transition: all .5s;
+    margin-left: 0px;
+}
+.my-container{
+    width: 90%;
+    max-width: 1350px;
+    margin: auto;
+}
+.full{
+    width: 100%;
+}
+.full.header{
+    background-color: #116d33;
+}
+.full.nav-header{
+    z-index: 9999;
+    box-shadow: 0px 4px 10px -7px #2b2828;
+    background-color: #10a145;
+}
+/* phần tử thông báo*/
+    @keyframes noti{
+        0%{bottom: 0px; opacity: 0;}
+        50%{bottom: 30px; opacity:1;}
+        100%{bottom: 0px; opacity: 0;}
+    }
+#noti{
+    
+    background-color: white;
+    border-radius: 5px;
+    position: absolute;
+    padding: 5px 22px;
+    z-index: 999;
+    bottom: 30px;
+    right: 20px;
+    border: solid 1px #008b62;
+    box-shadow: 0 0 5px 0px #008b62;
+    opacity: 0;
+}
+#noti span{
+    color: #000;
+}
+/* <============= header =============> */
+#nav-top{
+    width: 100%;
+    height: 35px;
+    display: block;
+    
+}
+#nav-top ul{
+    display: -webkit-inline-box;
+}
+#ad-respons{
+    display: none;
+    width: 100%;
+    height: 35px;
+    display: none; 
+    background-image: url('public/image/sale-top/sale-1.png');
+}
+#ad-respons span{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 17px;
+    color: white;
+    padding: 6px 10px;
+    background-color: rgba(0,0,0,0.4);
+}
+#ad-respons img{
+    width: 100%;
+    height: 100%;
+}
+/* acc user */
+
+.avt-user{
+    line-height: 0!important; 
+    width: 30px;
+    height: 30px;
+    border-radius: 999px;
+    overflow: hidden;
+    margin: 10px 5px 10px 0 !important;
+}
+.avt-user img{
+    width: 100%;
+}
+#nav-top .nav .nav-link,#user-name span,.nav-link{
+    color: white !important;
+}
+#nav-top .nav .nav-link{
+    font-weight: 100;
+}
+#user-name span,#navbarContent .nav-link{
+    font-weight: 600;
+}
+.nav-basket > span{
+    position: absolute;
+    top: 5px;
+    right: -5px;
+    background-color: white;
+    color: #10a145;
+    border-radius: 9999px;
+    padding: 0px 8px;
+}
+/*modal login*/
+/*ảnh avt acc*/
+.avtUser{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    margin-bottom: 10px;
+
+}
+.avtUser input{
+    display: none;
+}
+.avtUser label{
+        position: absolute;
+    right: -4px;
+    background-color: white;
+    padding: 4px 8px;
+    border-radius: 999px;
+}
+.avtUser div{
+    background-image: url('../image/User/user.png');
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+        border-radius: 999px;
+    overflow: hidden;
+}
+/*header modal*/
+.forgot:hover,div[data-target="#sigup"]:hover{
+    cursor: pointer;
+}
+ .modal{
+    background-image: linear-gradient(to left, rgba(0,168,255,0.5), rgba(185,0,255,0.5)) ,url(public/image/bg-01.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+ .modal-content .p-3  a img{
+    width: 30px;
+}
+/*body modal*/
+ .modal-dialog .modal-content{
+    border: 0 !important;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #00000045!important;
+}
+.modal-content h5{
+    margin-left: 16px;
+    font-size: 22px;
+    text-shadow: 1px 2px 0px #c8e911, -2px 0px 0px #00ffff;
+    color: white;
+    line-height: 2;
+}
+/*signup modal*/
+#form-signup label{
+    color : white;
+}
+
+/*------------------------------------------------------------------
+[ Input ]*/
+#loginXixao .form-group {
+  position: relative;
+}
+#loginXixao label{
+    color: white;
+    margin: auto;
+    font-size: 21px;
+}
+
+#loginXixao input{
+  color: white;
+    height: 50px;
+    background-color: transparent!important;
+    
+}
+.labelMove{
+  top: -18px;
+    left: 36px;
+    font-size: 25px;
+}
+
+/* nav bar */
+#navBar{
+    width: 100%;
+    height: 60px !important;
+}
+/* logo */
+#logo img:nth-child(1){
+    width: 160px !important;
+        margin-top: 10px;
+
+}
+#logo img:nth-child(2){
+    width: 50px !important;
+    display: none;
+}
+#logo{
+    line-height: 60px;
+}
+#logo a{
+    display: block;
+    text-align: left;
+}
+/* button nav*/
+.navbar-toggler{
+    padding: 8px 12px;
+    color: white !important;
+    border: solid 1px white !important;
+}
+/* search */
+
+.form-inline{
+    flex: auto;
+    margin-left: 10px;
+    min-width: 200px;
+    width: 40%;
+    display: block;
+    box-shadow: 1px 1px 5px -2px #000;
+}
+.input-group-append{
+    float: right;
+}
+form .input-group-text{
+    color: white;
+    background-color: #f6d013;
+    border: none;
+}
+/* nav item */
+#nav-main {
+    flex: auto;
+}
+#nav-main  .nav-item{
+    width: 132px;
+    margin-right: 0px !important;
+    color: white;
+}
+.navbar{
+    padding-left: 36px !important;
+}
+#nav-main .nav-item p,.avt-user{
+    float: left;
+    font-size: 16px;
+    line-height: 2;
+    transition: .5s cubic-bezier(0.17, 0.91, 0.82, 2.09);
+    padding-right: 16px;
+}
+#nav-main .nav-item  a:hover p{
+    transform: scale(1.3);
+}
+#nav-main .nav-item span{
+    text-align: left;
+    
+}
+
+/* nav responsive */
+#nav-respons{
+    box-shadow: 0px 0px 11px -4px #000;; 
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0px;
+    height: 100%;
+    background-color: white;
+    overflow: hidden;
+    transition: all .5s;
+}
+.acc-left{
+    text-align: center;
+    float: none;
+    margin: auto !important;
+    width: 80px;
+    height: 80px;
+}
+.acc-user p span{
+    z-index: 999;
+    position: absolute;
+    top: 8px;
+    right: 54px;
+    font-size: 25px;
+
+}
+/* nav left */
+
+.icon-logo{
+    width: 20px;
+}
+#nav-left ul a{
+    font-size: 15px;
+    color: #000 !important;
+}
+#nav-left ul li{
+    margin-left: 10px;
+    transition: all .6s;
+}
+#nav-left ul{
+    width: 200px;
+}
+ #nav-left li:hover{
+    margin-left: 25px;
+}
+/* hover acc */
+.hover-nav .icon-logo{
+    position: absolute; 
+    left: 25px;
+}
+.hover-nav .icon-logo:first-child{
+    opacity: 0;
+}
+.hover-nav .icon-logo:last-child{
+    opacity: 1;
+}
+.hover-nav li:first-child :hover .icon-logo:first-child{
+    opacity: 1;
+}
+.hover-nav li:first-child :hover .icon-logo:last-child{
+    opacity: 0;
+}
+.hover-nav.login{
+    width: 300px;
+    box-shadow: 0px 0px 5px -2px #000;
+    right: -52px;
+    top: 100px;
+    border-radius: 8px;
+    opacity: 0; 
+    visibility: hidden;
+    transition: all .6s;
+    z-index: 9999;
+    
+}
+.login p{
+    font-size: 16px;
+    text-align: right;
+    cursor: pointer;
+    margin: 5px;
+}
+.hover-nav .fa-caret-up{
+    position: absolute;
+    top: -26px;
+    right: 0px;
+    color: #ccc;
+    font-size: 37px; 
+    width: 200px;
+}
+.hover-nav.login li{
+    width: 100% !important;
+    text-align: center;
+    margin-top: 15px;
+}
+.hover-nav.login li > button{
+    width: 90% !important;  
+}
+.with-acc {
+    border-bottom: solid 2px #f3eded; 
+}
+.with-acc span:first-child{
+    padding: 0 10px;
+    background-color: white;
+    position: absolute;
+    bottom: -8px;
+    left: 50px;
+}
+.hover-nav a{
+    font-size: 14px;
+    text-align: right;
+}
+.product-item .card:hover .interact-product li .val-stt{
+    opacity: 1;
+}
+.product-item .card:hover .interact-product li i:last-child{
+    transform: scale(1);
+}
+.product-item .card:hover .interact-product{
+    right: 10px;
+}
+.nav-acc:hover .hover-nav{
+    top: 75px;
+    opacity: 1;
+    visibility: visible;
+}
+.card-body{
+    display: flex;
+    flex-flow: column;
+    /*height: 90px!important;*/
+}
+/*acc*/
+
+.login-acc i{
+    margin-right: 12px;
+    font-size: 20px; 
+    transition: .8s cubic-bezier(0.25, 0.1, 0.83, 1.63);
+    
+}
+.login-acc .hover-nav.login li{
+    padding: 10px;
+    margin: 0;
+    text-align: left !important;
+    border-bottom: 1px #d4d0d0 solid;
+}
+
+.nav-acc a{
+   color: #000;
+    text-decoration: none;
+}
+.nav-acc:hover .login-acc .hover-nav{
+    top: 60px !important;
+}
+/*scroll nav header*/
+/*ad class*/
+@keyframes toTop{
+    0%{top: -50px;}
+    100%{top: 0px;}
+}
+.scrollTop{
+    animation-name: toTop;
+    animation-duration: 1s;
+    position: fixed !important;
+    top: 0px !important;
+    background-color: #10a145!important;
+}
+/* </============= header ============> */
+/* <============= footer ============> */
+footer .full{
+    animation: move-gradient 2s ease infinite;
+    animation-iteration-count: infinite;
+    background-image: linear-gradient(20deg, #116d33,#10a145 40%,#008a33fa,#10a145 60%, #116d33);
+}
+
+.xixao-footer img{
+    width: 250px;
+
+}
+.contact .me img{
+    width: 22px;
+}
+.contact i{
+    font-size: 25px;
+}
+.contact ul{
+    list-style: none;
+    display: inline-block;
+    margin: 30px;
+    padding: 0 !important;
+    flex: inherit;
+    margin: auto;
+}
+.contact ul li{
+    float: left;
+}
+.license{
+    background-color: #024f1f;
+}
+.license p{
+    color: #08e159;
+    margin: 0;
+    padding: 5px;
+    font-size: 14px;
+}
+.my-acc,.my-product,.news{
+    color: white;
+    font-size: 20px;
+}
+.my-acc a,.my-product a,.news p{
+    font-size: 15px;
+}
+.my-acc ul li a i,.my-product ul li a i{
+    margin-right: 10px;
+}
+.icon-pay ul li{
+    padding: 5px;
+    background-color: white;
+    border-radius: 6px;
+    margin: 5px;
+}
+.icon-pay ul li img{
+    height: 20px;
+}
+.icon-pay ul li:first-child img{
+    height: 28px;
+}
+/* </============= footer ============> */
