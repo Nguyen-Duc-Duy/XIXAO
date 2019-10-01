@@ -53,7 +53,7 @@ $selectProItem = mysqli_query($connectData,"SELECT * FROM productt ORDER BY RAND
                         </div>
                     </li>
                     <li class="nav-item item">
-                     <div>
+                       <div>
                         <i class="fas fa-shoe-prints"></i>
                         <a  href="" class="m-0 nav-link">
                         Phụ Kiện</a>
@@ -99,10 +99,9 @@ $selectProItem = mysqli_query($connectData,"SELECT * FROM productt ORDER BY RAND
                     <a href="">
                         <img src="public/image/slide/Banner_2.png" alt="">
                     </a>
-                </div>
                 <div class="item">
                     <a href="">
-                        <img src="public/image/slide/bg2.jpg" alt="">
+                            <img src="public/image/slide/bg2.jpg" alt="">
                     </a>
                 </div>
                 <div class="item">
@@ -241,9 +240,9 @@ $selectProItem = mysqli_query($connectData,"SELECT * FROM productt ORDER BY RAND
                                                 <!-- <product item> -->
                                                     <?php
                                                     if(mysqli_num_rows($selectPro) >0){
-                                                        while ($row = mysqli_fetch_assoc($selectPro)) {
+                                                        while ($row = mysqli_fetch_assoc($selectPro))
+                                                        {
                                                             $postId = $row["id"];
-
                                                             ?>
                                                             <div class="col-md-3 col-6 col-sm-4  pr-0 my-2">
                                                                 <div class="product-item">
@@ -270,7 +269,7 @@ $selectProItem = mysqli_query($connectData,"SELECT * FROM productt ORDER BY RAND
                                                                                 </div>
                                                                             </div>
                                                                             <!--  add stt -->
-                                                                            <!-- <div class="interact-product">
+                                                                            <div class="interact-product">
                                                                                 <form class="send-stt">
                                                                                     <ul class="nav flex-column text-center">
                                                                                         <li class="nav-item mb-2">
@@ -284,7 +283,6 @@ $selectProItem = mysqli_query($connectData,"SELECT * FROM productt ORDER BY RAND
                                                                                             </div>
                                                                                         </li>
                                                                                         <li class="nav-item mb-2">
-                                                                                            <input type="checkbox" id="cart<?php echo $row["id"] ?>">
                                                                                             <label for="cart<?php echo $row["id"] ?>" class="stt">
                                                                                                 <i class="fas fa-vote-yea text-success"></i>
                                                                                                 <i class="fas fa-cart-arrow-down text-success"></i>
@@ -294,7 +292,6 @@ $selectProItem = mysqli_query($connectData,"SELECT * FROM productt ORDER BY RAND
                                                                                             </div>
                                                                                         </li>
                                                                                         <li class="nav-item">
-                                                                                            <input type="checkbox" id="eye<?php echo $row["id"] ?>">
                                                                                             <label for="eye<?php echo $row["id"] ?>" class="stt eye">
                                                                                                 <i class="fas fa-check text-success"></i>
                                                                                                 <i class="far fa-eye text-warning"></i>
@@ -305,7 +302,7 @@ $selectProItem = mysqli_query($connectData,"SELECT * FROM productt ORDER BY RAND
                                                                                         </li>
                                                                                     </ul>
                                                                                 </form>
-                                                                            </div> -->
+                                                                            </div>
                                                                         </div>
                                                                     </a>
                                                                     <!-- </card>  -->
@@ -313,18 +310,15 @@ $selectProItem = mysqli_query($connectData,"SELECT * FROM productt ORDER BY RAND
                                                             </div>
                                                             <?php 
                                                         }
-                                                    } 
+                                                    }
                                                     ?>
                                                     <!-- </product item> -->
                                                 </div>
                                                 <div class="row mx-0 pl-0">
                                                     <button class="btn btn-outline-danger show-more m-auto" id="<?php echo $postId ?>" >Xem Thêm</button>
-                                                    <p class="btn btn-outline-danger m-0 loading mb-2" style="display: none;">Loading...</p>
-                                                </div>
-
+                                                    <p class="btn btn-outline-danger m-0 loading mb-2" style="display: none;">Loading...</p>    
+                                                </div>    
                                             </div>
-
-
                                             <!-- </product> -->
                                             <!-- <type product> -->
                                                 <div class="type-product mt-1">
@@ -345,20 +339,19 @@ $selectProItem = mysqli_query($connectData,"SELECT * FROM productt ORDER BY RAND
                                                                             <p class="type-small"><?php echo $rowItemNew["name"]; ?></p>
                                                                             <p class="price"><?php echo number_format($rowItemNew["price"],0,",","."); ?></p>
                                                                         </div>
-                                                                        <!-- <div class="stt-item">
+                                                                        <div class="stt-item">
                                                                             <form action="" class="send-stt">
                                                                                 <input type="checkbox" id="heart-new-<?php echo $rowItemNew["id"] ?>">
                                                                                 <label for="heart-new-<?php echo $rowItemNew["id"]; ?>" class="stt">
                                                                                     <i class="fas fa-heart text-danger"></i>
                                                                                     <i class="far fa-heart text-danger"></i>
                                                                                 </label>
-                                                                                <input type="checkbox" id="eye-new-<?php echo $rowItemNew["id"] ?>">
                                                                                 <label for="eye-new-<?php echo $rowItemNew["id"] ?>" class="stt">
                                                                                     <i class="fas fa-check text-success"></i>
                                                                                     <i class="far fa-eye text-warning mr-2"></i>
                                                                                 </label>
                                                                             </form>
-                                                                        </div> -->
+                                                                        </div>
                                                                     </div>
                                                                 <?php } ?>
                                                                 <!-- </product type item> -->
@@ -383,20 +376,19 @@ $selectProItem = mysqli_query($connectData,"SELECT * FROM productt ORDER BY RAND
                                                                             <p class="type-small"><?php echo $love["name"] ?></p>
                                                                             <p class="price"><?php echo number_format($love["price"],0,",","."); ?></p>
                                                                         </div>
-                                                                        <!-- <div class="stt-item">
+                                                                        <div class="stt-item">
                                                                             <form action="" class="send-stt">
                                                                                 <input type="checkbox" id="heart-love-<?php echo $love["id"] ?>">
                                                                                 <label for="heart-love-<?php echo $love["id"] ?>" class="stt">
                                                                                     <i class="fas fa-heart text-danger"></i>
                                                                                     <i class="far fa-heart text-danger"></i>
                                                                                 </label>
-                                                                                <input type="checkbox" id="eye-love-<?php echo $love["id"] ?>">
                                                                                 <label for="eye-love-<?php echo $love["id"] ?>" class="stt">
                                                                                     <i class="fas fa-check text-success"></i>
                                                                                     <i class="far fa-eye text-warning mr-2"></i>
                                                                                 </label>
                                                                             </form>
-                                                                        </div> -->
+                                                                        </div>
                                                                     </div>
                                                                 <?php } ?>
                                                                 <!-- </product type item> -->
