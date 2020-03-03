@@ -77,8 +77,9 @@ if(isset($_POST["loadMore"])){
 	$id = $_POST["loadMore"];
 	$selectPro = mysqli_query($connectData,"SELECT COUNT(*) AS 'row' FROM productt");
 	$row = mysqli_fetch_assoc($selectPro);
+
 	$totalRow = $row["row"];
-	$limitPro = ($totalRow + 8);
+	$limitPro = (floor($totalRow/4))*4;
 	$selectProMore = mysqli_query($connectData,"SELECT * FROM productt ORDER BY RAND()  LIMIT $limitPro");
 	?>
 

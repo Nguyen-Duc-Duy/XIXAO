@@ -232,7 +232,6 @@ $resultparent = mysqli_query($connectData,$selectparent) or die ("error connect 
 	});
 	$("#listImage").change(function () {
 		for (var i = 0; i < $(this).get(0).files.length; i++) {
-			alert(this.files[i].name);
 			var reader = new FileReader();
 			reader.onload = function (e) {
 				$($.parseHTML('<div class="showListImage">')).css('background-image', 'url('+e.target.result+')').appendTo('div.box-listImg');
